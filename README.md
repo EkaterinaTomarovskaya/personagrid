@@ -50,7 +50,6 @@
    ```bash
    git clone [https://github.com/EkaterinaTomarovskaya/personagrid.git](https://github.com/EkaterinaTomarovskaya/personagrid.git)
 
-```
 
 2. **Перейдите в директорию проекта:**
 ```bash
@@ -80,5 +79,3 @@ npm start
 ## 📈 Контакты
 Автор: **Екатерина Томаровская** Если у вас возникли вопросы по проекту или предложения, пожалуйста, свяжитесь со мной:
 - **Email:** [katya.tomarovskaya@gmail.com](mailto:katya.tomarovskaya@gmail.com)
-
-```
