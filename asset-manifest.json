@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/personagrid/static/css/main.21bfda81.css",
-    "main.js": "/personagrid/static/js/main.cb912364.js",
+    "main.js": "/personagrid/static/js/main.63e771ee.js",
     "index.html": "/personagrid/index.html",
     "main.21bfda81.css.map": "/personagrid/static/css/main.21bfda81.css.map",
-    "main.cb912364.js.map": "/personagrid/static/js/main.cb912364.js.map"
+    "main.63e771ee.js.map": "/personagrid/static/js/main.63e771ee.js.map"
   },
   "entrypoints": [
     "static/css/main.21bfda81.css",
-    "static/js/main.cb912364.js"
+    "static/js/main.63e771ee.js"
   ]
 }
