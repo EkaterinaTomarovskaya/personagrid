@@ -53,7 +53,6 @@ function App() {
       
       <div className="toolbar">
         <div className="search-wrapper">
-          <span className="search-icon">🔍</span>
           <input 
             className="search-input"
             placeholder="Поиск по ФИО, телефону..." 

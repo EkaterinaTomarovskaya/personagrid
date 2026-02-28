@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# PersonaGrid — Управление данными персонала
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Современное веб-приложение для работы со списками сотрудников, реализованное на React. Проект включает в себя интерактивную таблицу с серверной сортировкой, фильтрацией и возможностью кастомизации интерфейса.
 
-## Available Scripts
+## 🔗 Ссылки
+- **Демо (Live Demo):** [Посмотреть проект](https://EkaterinaTomarovskaya.github.io/personagrid/)
+- **Репозиторий (Source Code):** [GitHub Repository](https://github.com/EkaterinaTomarovskaya/personagrid)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🛠 Технологический стек
+- **Frontend:** React 19, JavaScript (ES6+), HTML5, CSS3.
+- **Инструменты:** Fetch API для работы с HTTP-запросами, `gh-pages` для деплоя.
+- **API:** [DummyJSON Users API](https://dummyjson.com/docs/users)
+- **Запросы:** Fetch API (без сторонних библиотек)
+- **Деплой:** GitHub Pages
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📋 Реализованный функционал
 
-### `npm test`
+### Основные требования (Core):
+- **Интерактивная таблица:** Вывод всех необходимых полей (ФИО, возраст, пол, контакты, адрес).
+- **Тройная сортировка:** Поддержка состояний «По возрастанию», «По убыванию» и «Без сортировки» для ключевых полей.
+- **Серверное взаимодействие:** Сортировка и пагинация реализованы через параметры URL (HTTP-запросы).
+- **Ограничения верстки:** Ширина таблицы адаптивна (100%), но ограничена 1400px согласно ТЗ.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Дополнительные возможности (Advanced):
+- **Умная фильтрация:** Глобальный поиск по ФИО и телефону + фильтр по полу.
+- **Resizing колонок:** Возможность изменять ширину каждого столбца вручную (drag-and-drop) с ограничением минимальной ширины в 50px.
+- **Модальное окно:** Детальная карточка пользователя с аватаром, расширенными данными о росте, весе и полном адресе.
+- **Пагинация:** Полноценный контроллер страниц с отображением общего количества записей.
+- **Error Handling:** Обработка сетевых ошибок с возможностью повторного запроса (Retry).
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🏗 Архитектура
+Приложение разделено на логические слои для удобства поддержки:
+- **`hooks/`**: Бизнес-логика (работа с API, пагинация, ресайз колонок) вынесена в кастомные хуки.
+- **`components/`**: Чистые UI-компоненты (модальные окна, сообщения об ошибках).
+- **`api/`**: Изолированный слой для выполнения Fetch-запросов.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🚀 Инструкция по локальному запуску
 
-### `npm run eject`
+Для запуска проекта вам понадобится установленная среда [Node.js](https://nodejs.org/).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. **Клонируйте репозиторий:**
+   ```bash
+   git clone [https://github.com/EkaterinaTomarovskaya/personagrid.git](https://github.com/EkaterinaTomarovskaya/personagrid.git)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. **Перейдите в директорию проекта:**
+```bash
+cd personagrid
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. **Установите зависимости:**
+```bash
+npm install
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+4. **Запустите сервер для разработки:**
+```bash
+npm start
 
-### Analyzing the Bundle Size
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+Приложение откроется по адресу `http://localhost:3000`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## 📈 Контакты
+Автор: **Екатерина Томаровская** Если у вас возникли вопросы по проекту или предложения, пожалуйста, свяжитесь со мной:
+- **Email:** [katya.tomarovskaya@gmail.com](mailto:katya.tomarovskaya@gmail.com)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
