@@ -29,7 +29,7 @@ export const useUsers = (limit) => {
       setUsers(result);
       setTotal(data.total || 0);
     } catch (err) {
-      setError("Ошибка соединения с сервером. Пожалуйста, попробуйте позже.");
+      setError(err.message || "Ошибка соединения с сервером");
     } finally {
       setLoading(false);
     }
